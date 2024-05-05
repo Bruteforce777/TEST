@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;800&display=swap" rel="stylesheet"/>
+<script src="https://kit.fontawesome.com/a6765046e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-----Title------>
+    <section class="subheader">
+        <nav>
+            <h3>LOGO HERE</h3>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-sharp fa-solid fa-square-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!--------About Us------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are The World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus totam eos deleniti necessitatibus 
+                    facilis minus ab nulla impedit iusto nihil quae repellat provident nesciunt aut dicta sequ
+                     hic, commodi odio, recusandae quis corrupti excepturi? Eum 
+                    fuga omnis esse, animi at commodi distinctio cupiditate sed, iure suscipit vel aut dicta! Ullam?</p>
+                <a href="" class="visitbtn red-btn">EXPLORE NOW</a>    
+            </div>
+            <div class="about-col">
+                <img src="interior.jpeg">
+            </div>
+        </div> 
+    </section>
+
+    <!--------Footer------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ut error 
+            facere dolor aliquam pariatur,<br> modi vitae non ullam voluptatum iure amet accusamus 
+            voluptatibus nostrum quaerat<br> vero magnam aut, assumenda et. Dolor fugiat officiis vel!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>MADE with <i class="fa-regular fa-heart"></i> by Bruteforce</p>
+     </section>
+
+ <!-------Javscript for Toggling Menu------->
+
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+<!-------javascript for Toggling Menu------>
+
+</body>
+</html>    
